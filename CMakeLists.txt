@@ -399,7 +399,6 @@ endif()
       execute_process(COMMAND ${CMAKE_COMMAND} -E create_symlink
         \"lib${SONAME}${SOPOSTFIX}${SOEXT}\" \"libSDL${SOPOSTFIX}${SOEXT}\"
         WORKING_DIRECTORY \"${CMAKE_BINARY_DIR}\")")
-    install(FILES ${CMAKE_BINARY_DIR}/libSDL${SOPOSTFIX}${SOEXT} DESTINATION "${CMAKE_INSTALL_LIBDIR}")
   endif()
 
 if(STATICDEVEL AND SDL2DEVEL)
