@@ -390,6 +390,7 @@ if(SDL2DEVEL)
     configure_file("${CMAKE_SOURCE_DIR}/sdl2-config.in" "${CMAKE_BINARY_DIR}/sdl2-config" @ONLY)
     install(PROGRAMS "${CMAKE_BINARY_DIR}/sdl2-config" DESTINATION bin)
   endif()
+endif()
 
   set(SOEXT ${CMAKE_SHARED_LIBRARY_SUFFIX})
   get_target_property(SONAME SDL OUTPUT_NAME)
